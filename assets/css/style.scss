@@ -3,28 +3,15 @@
 @import "{{ site.theme }}";
 
 body {
-  background-color: #faf7f2; /* Soft warm off-white */
-  color: #4a4a4a; /* Soft dark gray for readable text */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #faf7f2;
+  color: #5c5c5c;
 }
 
-h1, h2, h3 {
-  color: #8c7a6b; /* Soft muted earthy tone for headers */
+h1 {
+  color: #8c7a6b;
+  border-bottom: 2px solid #e8e1d7;
 }
 
-a {
-  color: #a3b899; /* Soft sage green for links */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.wrapper {
-  background-color: #ffffff; /* Clean white card for the main text */
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very soft shadow */
-  margin-top: 40px;
+h2 {
+  color: #9ba890;
 }
