@@ -2,16 +2,30 @@
 ---
 @import "{{ site.theme }}";
 
+/* הסתרת התפריט השמאלי שמופיע כברירת מחדל בתבנית */
+header {
+  display: none !important;
+}
+
+/* מרכוז והרחבת התוכן הראשי כך שיתפוס את כל המקום */
+section {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 auto !important;
+  max-width: 800px !important;
+}
+
+/* שינוי צבעי הרקע והטקסט - גווני ורוד ולילך פסטל */
 body {
-  background-color: #faf7f2;
-  color: #5c5c5c;
+  background-color: #fdf6fa; /* רקע ורוד פסטל בהיר מאוד */
+  color: #6c5b6b; /* סגול-אפור מעודן לטקסט קריא */
 }
 
 h1 {
-  color: #8c7a6b;
-  border-bottom: 2px solid #e8e1d7;
+  color: #ba94b9; /* לילך עדין לכותרת הראשית */
+  border-bottom: 2px solid #eedbed; /* קו הפרדה סגול בהיר */
 }
 
-h2 {
-  color: #9ba890;
+h2, h3 {
+  color: #d8a7c2; /* ורוד פסטל לתת-כותרות */
 }
