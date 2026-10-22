@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Maya Baranovitch Malka
 ---
 
 # Maya Baranovitch Malka
