@@ -1,11 +1,26 @@
----
-layout: default
----
+<div class="banner">
+  <h1>Maya Baranovitch Malka</h1>
+  <h2>PhD Student | Weizmann Institute of Science</h2>
+</div>
 
-# Maya Baranovitch Malka
+<h1 align="center">Maya Baranovitch Malka</h1>
 
-## My Lab and Research
-I am a second-year PhD student at Orly Laufman's Lab. My research focuses on elucidating the role of ER remodeling in enterovirus replication and its underlying mechanisms.
+## About My Lab and Research
+I am a second-year PhD student at [Orly Laufman's Lab](https://www.weizmann.ac.il/molgen/Laufman/home). 
+My research focuses on elucidating the role of ER remodeling in enterovirus replication and its underlying mechanisms. 
+
+<!-- 
+***************************************************************************
+כאן המקום שלך להוסיף בעתיד עוד טקסט, תמונות או פירוט על המחקר שלך! 
+את יכולה לכתוב את הפירוט ממש מתחת לשורה הזו (ורק את תראי את ההערה הזו בקוד):
+***************************************************************************
+-->
+*[Your detailed research description and methodology can be added here in the future]*
+
+## Education
+* **Ph.D. Student, Molecular Genetics** - *Weizmann Institute of Science*
+* **M.Sc. in Cell Biology** - *Tel Aviv University*
+* **B.Sc. in Biology** - *Tel Aviv University*
 
 ## My Hobbies
 I love cooking, graphic design, and spending time with my family.
