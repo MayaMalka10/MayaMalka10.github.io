@@ -2,30 +2,86 @@
 ---
 @import "{{ site.theme }}";
 
-/* הסתרת התפריט השמאלי שמופיע כברירת מחדל בתבנית */
+/* הסתרת התפריט המקורי של התבנית */
 header {
   display: none !important;
 }
 
-/* מרכוז והרחבת התוכן הראשי כך שיתפוס את כל המקום */
+/* הרחבת התוכן כדי שייראה כמו אתר מלא */
+.wrapper {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
 section {
   width: 100% !important;
   float: none !important;
-  margin: 0 auto !important;
-  max-width: 800px !important;
+  padding: 30px !important;
 }
 
-/* שינוי צבעי הרקע והטקסט - גווני ורוד ולילך פסטל */
+/* הגדרת הבאנר העליון - גרדיאנט פסטל ורוד-לילך */
+.banner {
+  background: linear-gradient(135deg, #f5dceb, #d8a7c2, #ba94b9);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px; 
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(186, 148, 185, 0.2);
+}
+
+/* עיצוב הטקסט בתוך הבאנר */
+.banner h1 {
+  color: white !important;
+  border-bottom: none !important;
+  font-size: 3em !important;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.banner h2 {
+  color: #fffafc !important;
+  font-size: 1.3em !important;
+  font-weight: normal !important;
+  margin-top: 0;
+}
+
+/* עיצוב כללי של האתר - רקע ורוד פסטל בהיר */
 body {
-  background-color: #fdf6fa; /* רקע ורוד פסטל בהיר מאוד */
-  color: #6c5b6b; /* סגול-אפור מעודן לטקסט קריא */
+  background-color: #fdf6fa; 
+  color: #6c5b6b; 
 }
 
+/* כותרות ראשיות */
 h1 {
-  color: #ba94b9; /* לילך עדין לכותרת הראשית */
-  border-bottom: 2px solid #eedbed; /* קו הפרדה סגול בהיר */
+  color: #ba94b9; 
+  border-bottom: 2px solid #eedbed; 
+  padding-bottom: 10px;
 }
 
+/* תת-כותרות */
 h2, h3 {
-  color: #d8a7c2; /* ורוד פסטל לתת-כותרות */
+  color: #d8a7c2; 
+  margin-top: 35px;
+}
+
+/* קישורים */
+a {
+  color: #ba94b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a27ea1;
+}
+
+/* עיצוב רשימת ההשכלה (רווחים לקריאה נוחה) */
+ul {
+  line-height: 1.8;
+  font-size: 1.05em;
 }
