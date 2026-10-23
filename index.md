@@ -7,6 +7,10 @@
 I am a second-year PhD student at [Orly Laufman's Lab](https://www.weizmann.ac.il/molgen/Laufman/home). 
 My research focuses on elucidating the role of ER remodeling in enterovirus replication and its underlying mechanisms. 
 
+Enteroviruses dramatically remodel the architecture of their host cells. During infection, the morphology of multiple organelles is altered, and some organelles are destroyed. Moreover, enteroviruses induce the formation of new organelles that exist only in infected cells. All these fascinating changes are part of a viral master plan to transform host cells into virus manufactories. 
+
+I investigate how Coxsackievirus B3 remodels the structure and function of the ER, and how the remodeled ER supports or suppresses virus replication.
+
 ## Education
 * **Ph.D. Student, Molecular Genetics** - *Weizmann Institute of Science*
 * **M.Sc. in Cell Biology** - *Tel Aviv University*
