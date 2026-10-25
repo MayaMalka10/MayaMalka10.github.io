@@ -2,54 +2,43 @@
 ---
 @import "{{ site.theme }}";
 
-/* הסתרת התפריט המקורי של התבנית */
+/* הסתרת התפריט המקורי */
 header {
   display: none !important;
 }
 
-/* הרחבת התוכן כדי שייראה כמו אתר מלא */
-.wrapper {
-  width: 100% !important;
-  max-width: 900px !important;
-  margin: 0 auto !important;
+/* איפוס שוליים כדי שהבאנר ייגע בקצה העליון */
+body, html {
+  margin: 0 !important;
   padding: 0 !important;
+  background-color: #fdf6fa !important; /* צבע הרקע הוורוד העדין שיישאר מאחור */
+  color: #6c5b6b; 
 }
 
-section {
+.wrapper, section {
   width: 100% !important;
-  float: none !important;
-  padding: 30px !important;
-} /* <-- כאן היה חסר הסוגר! הוספתי אותו */
-
-/* הגדרת הבאנר העליון - גרדיאנט פסטל ורוד-לילך לרוחב מלא */
-.banner {
-  background: linear-gradient(135deg, #f5dceb, #d8a7c2, #ba94b9);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  margin-bottom: 40px;
-  
-  /* פריסה לרוחב מלא של המסך */
-  width: 100vw !important;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  
-  /* הצמדה לקצה העליון וביטול פינות מעוגלות */
-  margin-top: -30px !important;
-  border-radius: 0 !important;
-  box-sizing: border-box;
-  box-shadow: 0 5px 15px rgba(186, 148, 185, 0.2);
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-/* עיצוב הטקסט בתוך הבאנר */
+/* עיצוב הבאנר כך שיתחיל ממש מתחילת העמוד ויפרס לרוחב מלא */
+.banner {
+  width: 100% !important;
+  background: linear-gradient(135deg, #f5dceb, #d8a7c2, #ba94b9);
+  padding: 80px 20px 80px 20px !important;
+  margin: 0 !important;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
 .banner h1 {
   color: white !important;
   border-bottom: none !important;
   font-size: 3em !important;
-  margin-bottom: 10px;
   margin-top: 0;
-  padding-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .banner h2 {
@@ -59,13 +48,20 @@ section {
   margin-top: 0;
 }
 
-/* עיצוב כללי של האתר - רקע ורוד פסטל בהיר */
-body {
-  background-color: #fdf6fa; 
-  color: #6c5b6b; 
+/* עיצוב כרטיסיית הטקסט הלבנה עם פינות מעוגלות וצל עדין */
+.content-card {
+  background-color: #ffffff; /* רקע לבן לטקסט */
+  border-radius: 15px; 
+  padding: 50px;
+  max-width: 850px; 
+  /* המינוס (40-) מושך את הכרטיסייה קצת למעלה כך שהיא תעלה טיפה על הבאנר למראה יוקרתי */
+  margin: -40px auto 60px auto; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+  position: relative;
+  z-index: 10;
 }
 
-/* כותרות ראשיות */
+/* עיצוב כותרות ראשיות */
 h1 {
   color: #ba94b9; 
   border-bottom: 2px solid #eedbed; 
@@ -90,13 +86,13 @@ a:hover {
   color: #a27ea1;
 }
 
-/* עיצוב רשימת ההשכלה (רווחים לקריאה נוחה) */
+/* עיצוב רשימות */
 ul {
   line-height: 1.8;
   font-size: 1.05em;
 }
 
-/* סידור הפוטר (החלק התחתון) ודחיפתו לתחתית העמוד */
+/* סידור הפוטר בתחתית */
 footer {
   position: relative !important;
   float: none !important;
@@ -104,11 +100,8 @@ footer {
   display: block !important;
   width: 100% !important;
   text-align: center !important;
-  margin-top: 80px !important;
+  margin-top: 50px !important;
   padding: 20px 0 !important;
   font-size: 0.9em !important;
-  border-top: 1px solid #eedbed !important;
-  bottom: auto !important;
-  right: auto !important;
-  left: auto !important;
+  border-top: none !important;
 }
