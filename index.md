@@ -5,7 +5,7 @@
 
 <div class="content-card" markdown="1">
 
-<h1 align="center">Maya Baranovitch Malka</h1>
+<img src="maya.jpg" alt="Maya Baranovitch Malka" width="180" style="border-radius: 50%; display: block; margin: 0 auto 30px auto; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
 
 ## About My Lab and Research
 I am a second-year PhD student at [Orly Laufman's Lab](https://www.weizmann.ac.il/molgen/Laufman/home). 
