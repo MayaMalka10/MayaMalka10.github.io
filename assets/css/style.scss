@@ -22,30 +22,73 @@ body, html {
   margin: 0 !important;
 }
 
-/* עיצוב הבאנר כך שיתחיל ממש מתחילת העמוד ויפרס לרוחב מלא */
+/* הגדרת הבאנר העליון - גרדיאנט פסטל ורוד-לילך לרוחב מלא */
 .banner {
   width: 100% !important;
   background: linear-gradient(135deg, #f5dceb, #d8a7c2, #ba94b9);
-  padding: 80px 20px 80px 20px !important;
+  padding: 60px 40px !important;
   margin: 0 !important;
-  text-align: center;
   color: white;
   box-sizing: border-box;
 }
 
-.banner h1 {
+/* סידור התוכן של הבאנר (טקסט ותמונה) זה לצד זה */
+.banner-content {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto !important;
+  gap: 30px; /* רווח בין הטקסט לתמונה */
+}
+
+/* יישור הטקסט שמאלה בתוך הבאנר כדי לפנות מקום לתמונה */
+.banner-text {
+  text-align: left !important;
+  flex: 1;
+}
+
+.banner-text h1 {
   color: white !important;
   border-bottom: none !important;
   font-size: 3em !important;
   margin-top: 0;
   margin-bottom: 10px;
+  padding-bottom: 0 !important;
 }
 
-.banner h2 {
+.banner-text h2 {
   color: #fffafc !important;
   font-size: 1.3em !important;
   font-weight: normal !important;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* עיצוב תמונת הפרופיל בבאנר - ריבועית עם פינות מעוגלות בעדינות */
+.banner-img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover; /* שומר על יחס התמונה */
+  border-radius: 12px !important; /* פינות מעוגלות קלות במקום עיגול */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.5); /* מסגרת לבנה חצי-שקופה עדינה */
+  display: block !important;
+}
+
+/* מובייל - התאמה למסכים קטנים כדי שהתמונה לא תימחץ */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+  }
+  .banner-text {
+    text-align: center !important;
+  }
+  .banner-text h1 {
+    font-size: 2.2em !important;
+  }
 }
 
 /* עיצוב כרטיסיית הטקסט הלבנה עם פינות מעוגלות וצל עדין */
