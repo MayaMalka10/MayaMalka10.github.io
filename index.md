@@ -29,4 +29,7 @@ I love cooking, graphic design, and spending time with my family.
 ## Why I Chose This Course
 I want to be more efficient with my data analysis, knowing how to incorporate work with different sources, and improve my AI and programming skills.
 
+## New Local Change
+This line was written using VS code localy
+
 </div>
